@@ -14,4 +14,7 @@ describe('calculateNumber test', () => {
   it('Again two none integers', () => {
     assert.equal(calculateNumber(1.5, 3.7), 6)
   });
+  it('True fornegative non-integers', function () {
+    assert.equal(calculateNumber(-1.5, -3.7), -5);
+  });
 });
