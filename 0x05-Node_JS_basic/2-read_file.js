@@ -14,9 +14,9 @@ function countStudents(path) {
     const CS = chars.filter((cas) => cas[idx] === 'CS').map((cas) => cas[0]);
     const SWE = chars.filter((cas) => cas[idx] === 'SWE').map((cas) => cas[0]);
 
-    console.log(`Number of chars: ${chars.length}`);
-    console.log(`Number of chars in CS: ${CS.length}. List: ${CS.join(', ')}`);
-    console.log(`Number of chars in SWE: ${SWE.length}. List: ${SWE.join(', ')}`);
+    console.log(`Number of students: ${chars.length}`);
+    console.log(`Number of students in CS: ${CS.length}. List: ${CS.join(', ')}`);
+    console.log(`Number of students in SWE: ${SWE.length}. List: ${SWE.join(', ')}`);
   } catch (err) {
     throw new Error('Cannot load the database');
   }
